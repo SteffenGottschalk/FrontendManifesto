@@ -1,0 +1,27 @@
+{
+  "name": "@project/mono-repository",
+  "private": true,
+  "scripts": {
+    "build": "lerna run build",
+    "start:app": "yarn workspace @project/app start",
+    "start:design": "yarn workspace @project/designsystem start",
+    "lint": "lerna run lint",
+    "test": "lerna run test --parallel -- --ci --coverage --watchAll=false --runInBand"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/apps/*",
+      "packages/components/*",
+      "packages/developer/*"
+    ],
+    "nohoist": [
+      "packages/apps/**/webpack-dev-server",
+      "**/babel-loader",
+      "**/babel-jest"
+    ]
+  },
+  "devDependencies": {
+    "lerna": "4.0.0",
+    "@project/eslint-config": "*"
+  }
+}

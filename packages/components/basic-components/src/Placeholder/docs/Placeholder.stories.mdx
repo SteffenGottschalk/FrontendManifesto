@@ -1,0 +1,28 @@
+import { Story, ArgsTable, Canvas, Meta } from "@storybook/addon-docs/blocks";
+
+<!-- Import Component and export Template-->
+import Placeholder from "../Placeholder";
+export const Template = (args) => <Placeholder {...args} />
+
+<Meta title="Komponenten/Placeholder" component={Placeholder} />
+
+Diese Komponente rendert ein String in einem `Text`-Tag.
+
+<Canvas>
+  <Story name="Preview" args={{ text: 'My Preview Placeholder'}}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Props & Types
+
+<ArgsTable of={Placeholder} />
+
+## Examples
+
+
+<Canvas>
+  <Story name="Example">
+      <Placeholder text="Main Placeholder" />
+  </Story>
+</Canvas>
