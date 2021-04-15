@@ -1,10 +1,15 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Placeholder = ({ text, color }) => {
+const Placeholder = ({ text, color, disabeld }) => {
   return (
-    <div style={{ color: `${color}` }}>
-      ddsfsdfsdf
+    <div
+      style={{
+        borderLeft: `solid 8px ${color}`,
+        padding: '8px',
+        opacity: disabeld ? 0.5 : 1,
+      }}
+    >
       {text}
     </div>
   );
@@ -13,11 +18,13 @@ const Placeholder = ({ text, color }) => {
 Placeholder.propTypes = {
   text: PropTypes.string,
   color: PropTypes.string,
+  disabeld: PropTypes.bool,
 };
 
 Placeholder.defaultProps = {
-  text: "",
-  color: "yellow",
+  text: '',
+  color: 'yellow',
+  disabeld: false,
 };
 
 export default Placeholder;
