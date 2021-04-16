@@ -23,5 +23,26 @@
   "devDependencies": {
     "@project/eslint-config": "*",
     "lerna": "4.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@project/eslint-config"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "sourceType": "module"
+    }
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "jsxBracketSameLine": true,
+    "printWidth": 120,
+    "trailingComma": "none",
+    "arrowParens": "avoid"
   }
 }
