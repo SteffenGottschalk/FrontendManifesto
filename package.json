@@ -1,6 +1,8 @@
 {
   "name": "@project/mono-repository",
   "private": true,
+  "author": "@author",
+  "license": "MIT",
   "scripts": {
     "build": "lerna run build",
     "start:app": "yarn workspace @project/app start",
