@@ -7,9 +7,8 @@ const Placeholder = ({ text, color, disabeld }) => {
       style={{
         borderLeft: `solid 8px ${color}`,
         padding: '8px',
-        opacity: disabeld ? 0.5 : 1,
-      }}
-    >
+        opacity: disabeld ? 0.5 : 1
+      }}>
       {text}
     </div>
   );
@@ -18,13 +17,13 @@ const Placeholder = ({ text, color, disabeld }) => {
 Placeholder.propTypes = {
   text: PropTypes.string,
   color: PropTypes.string,
-  disabeld: PropTypes.bool,
+  disabeld: PropTypes.bool
 };
 
 Placeholder.defaultProps = {
   text: '',
   color: 'yellow',
-  disabeld: false,
+  disabeld: false
 };
 
 export default Placeholder;
