@@ -11,4 +11,8 @@ describe('Placeholder Component', () => {
     render(<Placeholder text="My Label Text" />);
     expect(screen.getByText('My Label Text')).toBeInTheDocument();
   });
+  it('renders with correct disabeld Label', () => {
+    render(<Placeholder text="My Label Text" disabeld />);
+    expect(screen.getByText('My Label Text')).toBeInTheDocument();
+  });
 });

@@ -1,8 +1,10 @@
 {
   "name": "@project/basic-components",
   "version": "0.0.0",
-  "main": "src/index.js",
-  "main:src": "src/index.js",
+  "main": "./src/index",
+  "files": [
+    "src"
+  ],
   "scripts": {
     "test": "react-scripts test",
     "lint": "eslint \"src/**/*.{js,jsx}\" --fix --max-warnings 5"
@@ -47,5 +49,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "author": "@author",
+  "license": "MIT"
 }

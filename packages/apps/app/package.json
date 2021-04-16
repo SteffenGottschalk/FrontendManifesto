@@ -5,7 +5,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "test": "react-app-rewired test",
+    "test": "react-scripts test",
     "lint": "eslint \"src/**/*.{js,jsx}\" --fix --max-warnings 5"
   },
   "dependencies": {
@@ -53,5 +53,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "author": "@author",
+  "license": "MIT"
 }
